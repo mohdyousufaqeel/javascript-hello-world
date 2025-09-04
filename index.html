@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello World — JavaScript</title>
+</head>
+<body>
+  <h1 id="greeting">Loading…</h1>
+
+  <!-- Inline JavaScript -->
+  <script>
+    // script runs after the page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('greeting');
+      if (el) el.textContent = 'Hello, World!';
+      console.log('Hello, World!');
+    });
+  </script>
+</body>
+</html>
